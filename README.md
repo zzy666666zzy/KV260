@@ -70,3 +70,8 @@ Summary: There were 2 ERROR messages shown, returning a non-zero exit code.
 
 Refer to the official AMD/Xilinx solution:
 https://adaptivesupport.amd.com/s/feed/0D52E00006ihQZYSA2?language=en_US
+
+# Load petalinux image to SD card
+```
+sudo dd if=petalinux-sdimage-2021.1-update1.wic of=/dev/disk3 bs=4m conv=sync status=progress
+```
